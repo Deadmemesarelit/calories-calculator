@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title> MY Calories Calculator</title>
+</head>
+<body>
+    
+  <main class="interface">
+    <h1>Calories BMR calculator :)</h1>
+        <!--Weight-->
+        <div class="weight">
+            <h3>Weight:</h3>
+            <input type="number" class="pounds" min="100" max="500" placeholder="150">
+        </div>
+        <!--Height-->
+        <div class="height">
+            <h3>Height:</h3>
+            <h4>Feet:</h4>
+            <input type="number" class="feet" min="5" max="8" placeholder="Feet: 5">
+            <h4>Inches:</h4>
+            <input type="number" class="inches" min="0" max="12" placeholder="Inches: 10">
+        </div>
+        <!--gender-->
+        <div class="gender">   
+            <h3>Biological Sex (for BMR calculation):</h3>
+            <label class="gender-option">
+                <input type="radio" name="sex" value="male" checked>
+                <span>Male</span>
+            </label>
+            <label class="gender-option">
+                <input type="radio" name="sex" value="female">
+                <span>Female</span>
+            </label>  
+            <h3>Is transitioning?</h3>
+            <select class="transitioning">
+                <option value="No" selected>No</option>
+                <option value="male-to-female">MTF</option>
+                <option value="female-to-male">FTM</option>
+            </select>
+            <div style="display: none;" class="transitioning-months">
+                <h3>Months on HRT</h3>
+                <input type="text" class="months-on-hrt" placeholder="">
+            </div>
+    
+        </div>
+
+        <!--Age-->
+        <div class="age">
+            <h3>Age:</h3>
+            <input type="number" class="age-input" min="15" max="80" placeholder="25">
+        </div>
+        <!--Activity level-->
+        <h3>Activity Level</h3>
+                <select class="activity">
+                    <option value="1.2">Sedentary (little or no exercise)</option>
+                    <option value="1.375">Lightly active (exercise 1-3 days/week)</option>
+                    <option value="1.55" selected>Moderately active (exercise 3-5 days/week)</option>
+                    <option value="1.725">Very active (exercise 6-7 days/week)</option>
+                    <option value="1.9">Extra active (physical job + exercise)</option>
+                </select>
+        <form id="bmr-form">
+            <button type="button" class="submit-button">Calculate BMR</button>
+        </form>  
+  </main>
+  <main class="errors" id="no-display">
+
+  </main>
+
+  <main class="results" id="no-display">
+    <h1>Results:</h1>
+        
+  </main>
+
+  
+    
+</body>
+</html>
