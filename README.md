@@ -7,7 +7,6 @@ from 0-12 months for trans-men, and 0-24 months for trans-women.
 - HTML
 - CSS
 - JavaScript
-- Node.js
 
 ## Problems while working on the app
 - Consideration of genders/trans-gender.
