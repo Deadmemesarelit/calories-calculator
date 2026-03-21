@@ -107,9 +107,10 @@ span{
     border: solid;
     border-color: darkgray;
     border-radius: 20px 40px 20px 40px;
-    width: 350px;
+    width: 300px;
     height: 300px;
     position: absolute;
+    padding: 10px;
     top: 50%;
     left: 85%;
     transform: translate(-50%, -50%);
