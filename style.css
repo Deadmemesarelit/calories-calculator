@@ -112,7 +112,7 @@ span{
     position: absolute;
     padding: 10px;
     top: 50%;
-    left: 85%;
+    left: 86.6%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column; /* Stack items vertically */
